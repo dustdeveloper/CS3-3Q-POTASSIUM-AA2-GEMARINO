@@ -7,6 +7,6 @@ function calculateExponentialPopulationGrowth() {
     
     let region = prompt("Which region is the monster in?").toUpperCase();
     let name = prompt("Identify the monster's name.").toUpperCase();
-
-    document.getElementById("result").innerHTML = "After 3 hours, the population of ".concat(region, " ", name, " has increased to ", population, "!")
+    // i think two concats on one line is good enough (❁´◡`❁)
+    document.getElementById("result").innerHTML = "After ".concat(time, " hours, the population of ").concat(region, " ", name, " has increased to ", population, "!")
 }
